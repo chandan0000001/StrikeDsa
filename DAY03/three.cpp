@@ -115,10 +115,188 @@ int main(){
 
 
 
-for (int i = 1 ; i < 5 ; i++){
-    for (int j = )
+// for (int i = 1 ; i < 5 ; i++){
+//     for (int j = )
+// }
+
+
+
+
+
+//even number 
+// for(int i = 2 ; i <=20 ; i=i+2){
+//     cout<<i<<endl;
+// }
+
+// for (int i = 1 ; i<=20 ; i++){
+//     if(i%2==0){
+//         cout<<i<<endl;
+//     }
+// }
+
+
+//odd number 
+// for(int i =1 ; i<=20;i=i+2){
+//     cout<<i<<endl;
+// }
+
+
+
+//a to z
+// for(char al = 'a' ; al<='z' ; al++){
+//     cout<<al<<endl;
+// }
+
+//suum of first 10 n umber 
+
+//>> garbage value
+// int counter;cout<<counter; 
+
+// int counter = 0 ;
+// for (int i = 0 ; i <= 10 ; i++){
+//     counter = counter + i; 
+// }
+// cout<<counter<<endl;
+
+//square 
+// int counter = 0 ; 
+// for(int i = 0; i <= 10; i++){
+//     counter = counter + (i*i);
+// }
+//    cout<<counter;
+
+
+
+
+// 1 2 3 4 5 
+// 1 2 3 4 5 
+// 1 2 3 4 5 
+// 1 2 3 4 5 
+// 1 2 3 4 5
+// 1 2 3 4 5
+
+// for(int i = 1 ; i <= 5; i++){
+//     cout<<i<< " ";
+// }
+// cout<<endl;
+// for(int i = 1 ; i <= 5; i++){
+//     cout<<i<< " ";
+// }
+// cout<<endl;
+
+// for(int i = 1 ; i <= 5; i++){
+//     cout<<i<< " ";
+// }cout<<endl;
+
+// for(int i = 1 ; i <= 5; i++){
+//     cout<<i<< " ";
+// }
+// cout<<endl;
+
+// for(int i = 1 ; i <= 5; i++){
+//     cout<<i<< " ";
+// }
+// cout<<endl;
+
+// for(int i = 1 ; i <= 5; i++){
+//     cout<<i<< " ";
+// }
+// cout<<endl;
+
+
+// for (int j = 1 ; j<=6 ; j++){
+
+
+//       for(int i = 1 ; i <=5 ; i++){
+//         cout<<i<<" ";
+//       }
+// cout<<endl;
+// }
+
+
+
+// for(int j = 1 ;  j <= 6; j++){
+//     for (char ch = 'a' ; ch<= 'e' ; ch ++){
+//         cout<<ch<<" ";
+//     }
+//     cout<<endl;
+// }
+
+
+
+// for (int j = 1 ; j <= 90 ;j++ ){
+//       for (int i = 0 ; i <= 5 ; i ++){
+//         cout<<"Hello Chandan , Chandan is a topper student "<<" ";
+         
+//      }
+
+//      cout<<endl;
+// }
+
+
+
+//10 to 1 
+// for (int i = 10; i >= 1; i--){
+//     cout<<i<<" ";
+//     cout<<endl;
+// }
+
+// int table = 7;
+// for(int i = 1 ; i <= 10 ; i++){
+//     cout<<table*i<<endl;
+// }
+
+
+
+// for(int j = 1 ; j<=5 ; j++){
+   
+
+//     for(int i =1 ; i<=5; i++){
+//     cout<<"*"<<" ";
+//   }
+//   cout<<endl;
+// }
+
+
+// *
+// **
+// ***
+// ****
+// *****
+
+
+// for(int i = 1 ; i<2 ; i ++){
+//   cout<<"*"<<" ";
+// }
+// cout<<endl;
+// for(int i = 1 ; i<3 ; i ++){
+//   cout<<"*"<<" ";
+// }
+// cout<<endl;
+// for(int i = 1 ; i<4 ; i ++){
+//   cout<<"*"<<" ";
+// }
+// cout<<endl;
+// for(int i = 1 ; i<5 ; i ++){
+//   cout<<"*"<<" ";
+// }
+// cout<<endl;
+// for(int i = 1 ; i<6 ; i ++){
+//   cout<<"*"<<" ";
+// }
+// cout<<endl;
+
+cout<<endl;
+for (int j = 1 ; j <=5 ; j++ ){
+     for(int i = 1 ; i<=j ; i++){
+      cout<<"*"<<" ";
+     }
+  cout<<endl;
 }
 
+
+
+ 
 
 
 
@@ -131,3 +309,4 @@ return 0 ;
 
 
 
+ 
