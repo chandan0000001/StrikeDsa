@@ -20,7 +20,6 @@
 // The 5th missing positive number from the entire sequence is 10
 
 
-
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -50,12 +49,6 @@ int KthMissingPositiveNumber(vector<int>& arr,int k){
 	}
 	return ans+k;
 
-
-
-
-
-
-    
 }
 int main(){
 cout<<"Wealcome to the probleam of KthMissingPositiveNumber"<<endl;
@@ -65,5 +58,7 @@ cin>>k;
 vector<int>arr;
 arr={2,5,9,12,18,20};
 cout<<KthMissingPositiveNumber(arr,k);
+cout<<endl;
+
     return 0;
 }
