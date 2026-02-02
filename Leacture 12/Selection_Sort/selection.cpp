@@ -6,7 +6,7 @@ int main(){
 
     // //1st task take smallest number first position to land 
     // int index = 0 ;
-    // for(int i = 0; i < n ; i++){
+    // for(int i = 1; i < n ; i++){
     //     if (arr[i]<arr[index]){
     //         index = i;
     //     }
@@ -20,8 +20,8 @@ int main(){
     //move small num index 3 (3-4)
     //boom array is sorted 
 
-    int arr []= {3,9,51,5,6,9,12,65,4};
-     int n =9;
+    int arr []= {3,9,51,5,6,9,12,65,4,54,34,343,4667};
+     int n =13;
 
     for(int i=0;i<n;i++){
         int index = i;
