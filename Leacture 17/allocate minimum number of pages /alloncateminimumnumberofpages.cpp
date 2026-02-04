@@ -19,3 +19,59 @@
 // Since the number of students k is greater than the number of books, it is impossible to allocate at least one book to every student.
 // Hence, the answer is -1.
 
+#include<iostream>
+#include<vector>
+using namespace std;
+
+bool allocateBook(int maxPages,vector<int>& arr,int k){
+    //count >> no of student , pages > as per count how the page is got by the sstudent ;
+
+    int count=1;
+    int pages=arr[0];
+    for(int i=1;i<arr.size();i++){
+        pages=pages+arr[i];
+        if(pages>maxPages){
+            count++;
+        pages=arr[i];
+        }
+    }
+    return count<=k;
+}
+
+int main(){
+int k;
+cout<<"Enter the value for the k: ";
+cin>>k;
+vector<int>arr;
+arr={12, 34, 67, 90};
+int n = arr.size();
+
+
+//  if(k<n){return -1;}
+if(k>n){
+    cout<<-1;
+    return 0;
+}
+
+
+ int start=0,end=0,ans=-1;
+ for(int i=0;i<n;i++){
+    start=max(start,arr[i]);
+    end += arr[i];
+ }
+ while (start<=end)
+ {
+    int mid = start+(end-start)/2;
+    //mid = maxPages 
+    if(allocateBook(mid,arr,k)){
+        ans=mid;
+        end=mid-1;
+    }else{
+        start=mid+1;
+    }
+ }
+ 
+// return ans;
+cout<<"Minimum maximum pages: "<<ans;
+return 0;
+}
