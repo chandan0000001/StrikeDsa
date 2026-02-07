@@ -20,18 +20,42 @@ int main(){
     //move small num index 3 (3-4)
     //boom array is sorted 
 
-    int arr []= {3,9,51,5,6,9,12,65,4,54,34,343,4667};
+    int arr []= {3,9,51,5,6,9,12,65,4,54,34,343,4667,234,325,4532,134,3544,76,325,658,9,6,3,434,66,457};
      int n =13;
 
+    // for(int i=0;i<n;i++){
+    //     int index = i;
+    //     for(int j =i+1;j<n;j++){
+    //         if(arr[j]<arr[index]){
+    //         index = j;
+    //     }
+    //     }
+    //     swap(arr[index],arr[i]);
+    // }
     for(int i=0;i<n;i++){
-        int index = i;
-        for(int j =i+1;j<n;j++){
-            if(arr[j]<arr[index]){
-            index = j;
+       int index=i;
+       for(int j=i+1;j<n;j++){
+        if(arr[j]<arr[index]){
+            index=j;
         }
-        }
-        swap(arr[index],arr[i]);
     }
+    swap(arr[index],arr[i]);
+
+}
+
+//return arr;
+
+
+
+
+
+
+
+
+
+
+
+
     for(int i = 0 ; i < n; i++){
         cout<<arr[i]<<" "<<endl;
     }
