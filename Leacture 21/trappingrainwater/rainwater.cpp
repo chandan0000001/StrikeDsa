@@ -1,0 +1,48 @@
+// //  Trapping Rain Water
+
+
+// // You are given an array arr of non-negative integers, where each element represents the height of a block and each block has a width of 1. Your task is to compute how much water can be trapped between the blocks after it rains.
+
+// // Water can only be trapped in the valleys formed between taller blocks. The amount of water trapped at any position depends on the maximum height of blocks on both its left and right sides.
+
+// // Example 1:
+// // Input: arr = [0,1,0,2,1,0,1,3,2,1,2,1]
+// // Output: 6
+// // Explanation:
+// // The elevation map is represented by array [0,1,0,2,1,0,1,3,2,1,2,1].
+// // In this case, 6 units of water are trapped.
+// // Example 2:
+// // Input: arr = [3,0,2,0,4]
+// // Output: 7
+// // Constraints:
+// // • 1 ≤ n ≤ 10^5
+// // • 0 ≤ arr[i] ≤ 10^4
+
+
+
+
+
+
+// int trapWater(vector<int>& arr) {
+//     int n = arr.size();
+//     if (n < 3) return 0;
+
+//     vector<int> rightMax(n);
+//     rightMax[n - 1] = arr[n - 1];
+//     for (int i = n - 2; i >= 0; i--) {
+//         rightMax[i] = max(rightMax[i + 1], arr[i]);
+//     }
+
+//     int leftMax = arr[0];
+//     int totalWater = 0;
+
+//     for (int i = 1; i < n - 1; i++) {
+//         int minHeight = min(leftMax, rightMax[i]);
+//         if (minHeight > arr[i]) {
+//             totalWater += minHeight - arr[i];
+//         }
+//         leftMax = max(leftMax, arr[i]);
+//     }
+
+//     return totalWater;
+// }
