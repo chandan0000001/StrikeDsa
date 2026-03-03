@@ -46,3 +46,57 @@
 
 //     return totalWater;
 // }
+
+
+
+
+
+
+
+
+	// int n = arr.size();
+	// vector<int> leftMax(n,0);
+	// vector<int> rightMax(n,0);
+	// leftMax[0]=arr[0];
+	// rightMax[n-1]=arr[n-1];
+
+	// for(int i=1;i<n-1;i++){
+	// 	leftMax[i]=max(leftMax[i-1],arr[i]);
+	// }
+	// for(int i=n-2;i>0;i--){
+	// 	rightMax[i]=max(rightMax[i+1],arr[i]);
+	// }
+	// int totalWater=0;
+	// for(int i=1;i<n-1;i++){
+	// 	int minLeftRight=min(leftMax[i-1],rightMax[i+1]);
+	// 	if(minLeftRight>arr[i]){
+	// 		totalWater+=minLeftRight-arr[i];
+	// 	}
+	// }
+	// return totalWater;
+
+
+
+
+
+
+//     //solve int two pass 
+//    int n=arr.size();
+//    vector<int> rightMax(n,0);
+//    int leftMax=arr[0];
+//    rightMax[n-1]=arr[n-1];
+//    for(int i=n-2;i>0;i--){
+// 	rightMax[i]=max(rightMax[i+1],arr[i]);
+//    }
+//    int totalWater=0;
+//    for(int i=1;i<n-1;i++){
+// 		leftMax=max(leftMax,arr[i]);
+// 			int minLeftRight=min(leftMax,rightMax[i+1]);
+// 			if(minLeftRight>arr[i]){
+// 				totalWater+=(minLeftRight-arr[i]);
+// 			}	
+//    }
+//    return totalWater;
+
+
+
