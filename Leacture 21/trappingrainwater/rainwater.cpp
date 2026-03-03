@@ -100,3 +100,38 @@
 
 
 
+
+
+// //1st phase 
+// iint trap(vector<int>& arr) {
+//     int n = arr.size();
+//     int left = 0, right = n - 1;
+//     int leftMax = 0, rightMax = 0;
+//     int totalWater = 0;
+
+//     while(left < right) {
+//         if(arr[left] < arr[right]) {
+
+//             if(leftMax > arr[left]) {
+//                  totalWater += leftMax - arr[left];
+//             } else {
+//                 leftMax = arr[left];
+//             }
+
+//             left++;
+
+//         } else {
+
+//             if(rightMax >arr[right] ) {
+//                totalWater += rightMax - arr[right];
+//             } else {
+               
+//                   rightMax = arr[right];
+//             }
+
+//             right--;
+//         }
+//     }
+
+//     return totalWater;
+// }
