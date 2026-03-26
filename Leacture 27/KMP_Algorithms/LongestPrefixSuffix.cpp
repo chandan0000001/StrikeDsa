@@ -24,3 +24,37 @@
 // • 1 <= n <= 10⁵ (string length)
 // • Return length of the longest substring, not the substring itself
 // • If no valid substring with exactly k distinct characters exists, return -1
+
+
+
+
+
+// int getLPSLength(string& s) {
+//     // Your code here
+//     int n = s.size();
+    
+//     vector<int>LPS(n,0);
+//     int prefix=0,suffix=1;
+
+//     while(suffix<n){
+//         //character matched 
+//         if(s[prefix]==s[suffix]){
+//         LPS[suffix]=prefix+1;
+//         prefix++;suffix++;
+//     }
+//     else{//if not match 
+//         if(prefix==0){
+//             suffix++;
+//         }
+//         else{//lps previous index step
+//             prefix=LPS[prefix-1];
+//         }
+//       }
+//     }
+    
+//     return LPS[n-1];
+
+//     }
+
+//     //tc > O(n)
+//     //sp > O(n)
