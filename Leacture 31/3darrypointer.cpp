@@ -1,10 +1,6 @@
 #include<iostream>
 using namespace std;
 int main(){
-
-
-
-    
     //3d arry
     int ***arr = new int**[3];
     //now it ponter to the 2d array
