@@ -15,9 +15,10 @@ int main(){
     //  int a =10;
     // //  cout<<a<<endl;;
     // //  cout<<&a<<endl;//print adress
-    // // int adress=&a;//adress canot be as a inout > size matters 
+    // // int adress=&a;//adress canot be as a inout > size matters possible but compiler warmning 
+    //so pointer created to store it 
     // int *ptr=&a;
-    // cout<<ptr<<endl;//print adress ptr is a pointer which point to 10;
+    // cout<<ptr<<endl;//print adress ptr is a pointer which point to adreess of a ;
     // cout<<*ptr<<endl;//print value 
     // cout<<&ptr<<endl;
 
