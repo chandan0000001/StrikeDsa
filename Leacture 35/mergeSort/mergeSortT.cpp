@@ -30,7 +30,6 @@ void merge(vector<int> &arr,int start,int mid,int end){
     
 }
 
-
 void mergeSort(vector<int> &arr,int start,int end){
     
     //handle the base case 
