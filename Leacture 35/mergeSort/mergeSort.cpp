@@ -16,8 +16,75 @@
 // • 1 <= arr.length <= 10^5
 // • -10^5 <= arr[i] <= 10^5
 
+//manual code 
+// class Solution {
+// public:
+//     void merge(vector<int>&arr,int start,int mid , int end){
+//         //create a temp array 
+//         vector<int>temp(end-start+1);
+//         int left = start;
+//         int right = mid+1;
+//         int index =0;
+//         //left portion start to mid 
+//         // right portion mid+1 to end 
+//         while(left <= mid&&right <= end){
+//             if(arr[left]<=arr[right]){
+//                 //left side element in the temp array 
+//                 temp[index++]=arr[left++];
+//             }else{
+//                 //right side element in the temp array 
+//                 temp[index++]=arr[right++];
+//             }
+//         }
+//         //arrange rest element to the temp array
+//         while(left<=mid){
+//             temp[index++]=arr[left++];
+//         }
+//         while(right<=end){
+//             temp[index++]=arr[right++];
+//         }
+
+//         //copy the element from temp to orginal array 
+//         index=0;
+//         for(int i=start;i<=end;i++){
+//             arr[i]=temp[index++];
+//         }
+//     }
+//     void MergeSort(vector<int>&arr,int start,int end){
+
+//         //base condition 
+//         if(start==end){return;}
+//         //find mid
+//         int mid=start+(end-start)/2;
+//         //for left part
+//         MergeSort(arr,start,mid);
+//         //for right part
+//         MergeSort(arr,mid+1,end);
+//         //now merge
+//         merge(arr,start,mid,end);
+//     }
+//   void mergeSort(vector<int>& arr) {
+//     // Write your code here
+//     MergeSort(arr,0,arr.size()-1);
+//   }
+// };
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ai generated
 // class Solution {
 // public:
 //     void mergeSort(vector<int>& arr) {
@@ -69,3 +136,49 @@
 //         }
 //     }
 // };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
