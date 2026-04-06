@@ -17,3 +17,31 @@
 // • 0 <= arr.length <= 10⁶
 // • 0 <= arr[i] <= 10⁶
 // • 0 <= target <= 10⁶
+
+
+
+
+
+// class Solution {
+//     public:
+//     void ctsubsetSum(vector<int> &arr,int index,int size,int sum,int &count,int target){
+//         //base condiotion
+//         if(sum==target){
+//              count++;
+//             return;
+//             }
+//         if(sum>=target||index==size) return;
+//     //age badhna he and add karni he 
+//         ctsubsetSum(arr,index+1,size,sum+arr[index],count,target);
+//         // age badhh na he add mahii karni he 
+//          ctsubsetSum(arr,index+1,size,sum,count,target);
+//     }
+//     int countSubsetsWithSum(vector<int>& arr, int target) {
+//         // Your code here
+//         int count =0;
+//         int n = arr.size();
+//         ctsubsetSum(arr,0,n,0,count,target);
+//         return count;
+
+//     }
+// };
