@@ -35,23 +35,27 @@
 
 // class Solution {
 // public:
-//     void findSubsets(vector<int>nums,int index,int size,vector<int>&temp,vector<vector<int>> &ans){
-//         if(index==size){
+// //int n = size 
+//     void subSets(vector<int>& nums,int n,int index,vector<int>temp,vector<vector<int>>&ans){
+//         //base condiotion
+//         if(index==n){
 //             ans.push_back(temp);
 //             return;
 //         }
-//         findSubsets(nums,index+1,size,temp,ans);
+//         //ek wale ko lena he 
 //         temp.push_back(nums[index]);
-//         findSubsets(nums,index+1,size,temp,ans);
+//         subSets(nums,n,index+1,temp,ans);
+//         //ek wale ko nahi lena he 
 //         temp.pop_back();
+//         subSets(nums,n,index+1,temp,ans);
 //     }
+
 //     vector<vector<int>> subsets(vector<int>& nums) {
 //         // Your code here
-//         int n = nums.size();
-//       vector<vector<int>>ans;                                                           
-//       vector<int>temp;
-//       findSubsets(nums,0,n,temp,ans);
-//       return ans;
+//         vector<int>temp;
+//         vector<vector<int>>ans;
+//         subSets(nums,nums.size(),0,temp,ans);
+//         return ans;
 //     }
 // };
 

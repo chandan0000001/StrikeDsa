@@ -17,29 +17,28 @@
 
 // class Solution {
 // public:
-//    void permutation(vector<int>&nums,int index,int size,vector<vector<int>>&ans){
-
-//         //terminate conditon 
-//         if(index==size-1){
-//             ans.push_back(nums);
-//             return;
-//         }
-//         for(int i=index;i<size;i++){
-//             //intial swap
-//             swap(nums[index],nums[i]);
-//             //function call
-//             permutation(nums,index+1,size,ans);
-//             //bcktrack or reset it 
-//             swap(nums[index],nums[i]);
-//         }
-        
-
-//     }
+// //here n = size 
+// void permutations(vector<int>&nums,int index,int n,vector<vector<int>>&ans){
+//     //all operation was conduct with n=in one arry so '&' sign with nums used and '&' with ans used for the -> multiple time it store the value so we fix that (for diffeernt function different array created result -> huge space in heap )
+//   if(index==n-1){
+//     //size n-1 is the end element 
+//     ans.push_back(nums);
+//     return;
+//   }  
+//   for(int i = index;i<n;i++){
+//     //inttial swap
+//     swap(nums[index],nums[i]);
+//     //function call and additon beggin until the return case hit 
+//     permutations(nums,index+1,n,ans);
+//     //this swap use for the restore it and begin to the next step 
+//     swap(nums[index],nums[i]);
+//   }
+// }
 //     vector<vector<int>> permute(vector<int>& nums) {
 //         // Code here
+//         int index = 0;
 //         vector<vector<int>>ans;
-//         int index =0;
-//         permutation(nums,index,nums.size(),ans);
+//         permutations(nums,index,nums.size(),ans);
 //         return ans;
 //     }
 // };
