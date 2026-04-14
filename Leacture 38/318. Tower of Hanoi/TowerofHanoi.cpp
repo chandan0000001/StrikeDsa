@@ -41,3 +41,15 @@
 // move disk 1 from rod 2 to rod 3
 // Constraints:
 // • 0 ≤ n ≤ 20
+
+
+
+
+class Solution {
+  public:
+    int towerOfHanoi(int n, int from, int to, int aux) {
+        // code here
+    if(n==0) return 0;
+       return towerOfHanoi(n-1,from,to,aux)+1+towerOfHanoi(n-1,aux,from,to);
+    }
+};
