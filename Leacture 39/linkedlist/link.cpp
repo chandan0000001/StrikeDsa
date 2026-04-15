@@ -31,3 +31,8 @@ int main(){
     // cout<<head->next<<" ";
     return 0;
 }
+
+
+
+
+// https://excalidraw.com/#json=EJ9XJcVMDAypPj5ZyOY-1,nR7XkNU4a3G12S5j4SnhPA
