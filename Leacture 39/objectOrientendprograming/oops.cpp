@@ -6,15 +6,25 @@ class student{
     string name;
     int age;
     int rollno;
+
+    //constructor 
+    
 };
+
+
 class customer{
     public:
     string name,bank_name;
     int age,balance,account_number;
+
+
+
+    //constructor 
+    
 };
 int main(){
 
-    student s1;
+    student s1,S2,S3;
     //here the s1 is the object of student 
     s1.name="Chandan";
     s1.age=10;
@@ -23,6 +33,19 @@ int main(){
     cout<<endl;
 
 
+
+
+
+    S2.name="Mohon";
+    S2.age=34;
+    S2.rollno=49;
+     cout<<S2.name<<" "<<S2.age<<" "<<S2.rollno<<" ";
+    cout<<endl;
+
+  S3=S2;
+//   object can be copied 
+    cout<<S3.name<<" "<<S3.age<<" "<<S3.rollno<<" ";
+    cout<<endl;
 
     customer C1;
     C1.name="Damyanti";
