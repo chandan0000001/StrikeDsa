@@ -20,8 +20,14 @@ Node *creatLinkedlist(int arr[] ,int index,int size){
     return temp;
 };
 
-Node *reverseTheLinkedList(Node *Head){
+Node *reverseTheLinkedList(Node *curr,Node *prev){
   
+    if(curr==NULL){
+        return prev;
+    }
+    Node *future = curr->next;
+    curr->next=prev;
+    return reverseTheLinkedList(future,curr); 
 };
 
 int main(){
@@ -34,7 +40,7 @@ int main(){
         temp=temp->next;
     };
 
-    Head=reverseTheLinkedList(Head);
+    Head=reverseTheLinkedList(Head,NULL);
 
 cout<<"After reverse the linked list ";
 
