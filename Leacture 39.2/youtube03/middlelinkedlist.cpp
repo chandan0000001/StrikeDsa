@@ -44,6 +44,7 @@ int main (){
 
    cout<<endl<<"The mid value is: "<<"";
     cout<<middle->value<<endl;
+    cout<<middle->next<<endl;
 
     return 0;
 }
