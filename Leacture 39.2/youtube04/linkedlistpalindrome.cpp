@@ -19,6 +19,14 @@ Node *createLinkedList(int arr[],int size,int index){
     temp->next=createLinkedList(arr,size,index+1);
     return temp;
 };
+
+
+bool isPalindrome(Node* head) {
+         
+}
+
+
+
 int main(){
 
     int arr[10]={23,43,5,4,35,63,32,254,55,22};
