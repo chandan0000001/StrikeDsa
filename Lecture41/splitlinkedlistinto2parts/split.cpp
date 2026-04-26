@@ -20,7 +20,7 @@
 
 
 
-// /*
+/*
 // struct ListNode {
 //     int val;
 //     ListNode* next;
@@ -38,11 +38,16 @@
 //         slow=slow->next;
 //         fast=fast->next->next;
 //     }
+//     //even pe first dead ho jatta he and odd pe dead nahi hota so usko handle krne ke liye 
+//     //slow ka value prev ke andar dalo and slow ko age lejaoo 
+    
 
 //     if(fast){
 //         prev=slow;
 //         slow=slow->next;
 //     }
+
+//     //first half ke end ko set karo null and 2nd wala to already null hoga 
 //     prev->next=NULL;
 //     return {head,slow};
 // }
