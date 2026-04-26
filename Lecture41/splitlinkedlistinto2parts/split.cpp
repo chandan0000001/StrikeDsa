@@ -17,3 +17,32 @@
 // Constraints:
 // • 2 <= number of nodes <= 10^5
 // • 1 <= node->data <= 10^3
+
+
+
+// /*
+// struct ListNode {
+//     int val;
+//     ListNode* next;
+//     ListNode(int x) : val(x), next(nullptr) {}
+// };
+// */
+// pair<ListNode*, ListNode*> splitList(ListNode *head) {
+//     if(head==NULL|| head->next==NULL) return {head,NULL};
+
+//     ListNode *slow = head;
+//     ListNode *fast = head;
+//     ListNode *prev = head;
+//     while(fast!=NULL && fast->next!=NULL){
+//         prev=slow;
+//         slow=slow->next;
+//         fast=fast->next->next;
+//     }
+
+//     if(fast){
+//         prev=slow;
+//         slow=slow->next;
+//     }
+//     prev->next=NULL;
+//     return {head,slow};
+// }
