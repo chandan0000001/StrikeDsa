@@ -1,4 +1,4 @@
-// LEETCODE      https://leetcode.com/problems/linked-list-cycle/?envType=problem-list-v2&envId=linked-list
+// LEETCODE   https://leetcode.com/problems/linked-list-cycle/?envType=problem-list-v2&envId=linked-list
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -23,7 +23,7 @@
 // };
 
 
-// GG               https://www.geeksforgeeks.org/problems/detect-loop-in-linked-list/1
+// GG  https://www.geeksforgeeks.org/problems/detect-loop-in-linked-list/1
 
 /*
 class Node {
@@ -57,7 +57,7 @@ class Node {
 
 
 
-// strikes            https://strikes.in/practice/68c2d3de7a37da4267fb97bf    
+// strikes https://strikes.in/practice/68c2d3de7a37da4267fb97bf    
 //revison time 
 // bool hasCycle(ListNode* head) {
 //     //handle the bse case 
