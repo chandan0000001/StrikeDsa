@@ -74,7 +74,7 @@
 
 
 
-GFG ( https://www.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1 )
+// GFG Kth from End of Linked List ( https://www.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1 )
 
 /* struct Node {
   int data;
@@ -112,7 +112,7 @@ GFG ( https://www.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1 
 // };
 
 
-leetCode ( https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/?envType=problem-list-v2&envId=linked-list )    
+// leetCode ( https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/?envType=problem-list-v2&envId=linked-list )    
 
 /**
  * Definition for singly-linked list.
