@@ -62,3 +62,105 @@
 //     }
 // };
 
+// strikes https://strikes.in/practice/69b2c7ff5c9e0542d6856346
+
+
+
+// Leetcode 
+// https://leetcode.com/problems/reverse-nodes-in-k-group/
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+// class Solution {
+// public:
+//     ListNode* reverseKGroup(ListNode* head, int k) {
+//        if(!head) return NULL;
+
+//         //check hoemany nodes are presesent ther 
+//         ListNode *temp = head;
+//         int count =0;
+//         while(temp && count<k){
+//             temp=temp->next;
+//             count++;
+//         }
+//         if(count<k) return head;
+
+
+//        ListNode *prev = NULL;
+//        ListNode *curr = head;
+//        ListNode *fut = NULL;
+
+//         count =0;
+//        while (curr && count<k){
+//         fut=curr->next;
+//         curr->next=prev;
+//         prev=curr;
+//         curr=fut;
+//         count++;
+//        }
+//        if(fut){
+//         head->next=reverseKGroup(fut,k);
+//        }
+//     return prev;
+//     }
+// };
+
+
+
+
+// GG https://www.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1
+// /*
+// class Node {
+//   public:
+//     int data;
+//     Node* next;
+
+//     Node(int x){
+//         data = x;
+//         next = NULL;
+//     }
+// };
+// */
+// class Solution {
+//   public:
+//     Node *reverseKGroup(Node *head, int k) {
+//         // code here
+//         if(!head) return NULL;
+//         //Count the number of nodes 
+        
+//         Node *temp = head;
+//         int count =0;
+//         // while(temp&&count<k){
+//         //     temp=temp->next;
+//         //     count++;
+//         // }
+//         // if(count<k) return head;
+        
+//         Node *prev = NULL;
+//         Node *curr = head;
+//         Node *fut = NULL;
+//         //reverse logic 
+//         //reset count 
+//         count =0;
+//         while(curr&&count<k){
+//             fut=curr->next;
+//             curr->next=prev;
+//             prev=curr;
+//             curr=fut;
+//             count++;
+//         }
+//         //recursion steap
+//         if(fut){
+//             head->next=reverseKGroup(fut,k);
+//         }
+//         return prev;
+//     }
+// };
