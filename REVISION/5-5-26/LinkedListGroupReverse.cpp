@@ -22,3 +22,43 @@
 // • 1 ≤ k ≤ size of linked list
 
 
+/*
+  Node is defined as
+  struct Node
+  {
+      int data;
+      struct Node *next;
+      Node(int x){
+          data = x;
+          next = NULL;
+      }
+  };
+*/
+
+// class Solution {
+// public:
+//     Node *reverseKGroup(Node *head, int k) {
+//         // Your code here
+//         //check the head is null then return null;
+//         if(!head) return NULL;
+//         //reverse logic 
+//         Node *prev = NULL;
+//         Node *curr = head;
+//         Node *fut = NULL;
+//         int count = 0;
+//         while(curr && count <k){
+//             fut=curr->next;
+//             curr->next=prev;
+//             prev=curr;
+//             curr=fut;
+//             count++;
+//         }
+//         //recursion part
+//         if(fut){
+//             head->next=reverseKGroup(fut,k);
+//         }
+//         return prev;
+
+//     }
+// };
+
