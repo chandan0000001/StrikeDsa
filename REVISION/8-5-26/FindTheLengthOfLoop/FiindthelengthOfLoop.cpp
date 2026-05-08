@@ -68,3 +68,80 @@
 //     }
 //     return count;
 // }
+
+
+
+
+
+// GG
+// https://www.geeksforgeeks.org/problems/find-length-of-loop/1
+
+
+/*
+class Node {
+ public:
+    int data;
+    Node *next;
+
+    Node(int x) {
+        data = x;
+        next = NULL;
+    }
+};
+*/
+
+// class Solution {
+//   public:
+  
+//   //Cycle detcetion function 
+// Node *floyddecetion(Node*head){
+//     if(!head || !head->next){return NULL;}
+//     Node *slow = head, *fast=head; 
+//     while(fast && fast->next){
+//         slow = slow->next;
+//         fast = fast->next->next;
+//         if(slow == fast){ //cycle was dected
+//             return slow;
+//         }
+//     }
+//     return NULL;
+// }
+
+// //fast node of the Loop function 
+// Node *getFisrtNode(Node *head){
+//     if(!head || !head->next){return NULL;}
+//     Node *slow = head;
+//     Node *pointOfinteraction = floyddecetion(head);
+//     //if point of interaction is NULL or not 
+//     if(!pointOfinteraction) return NULL;
+//     //Move slow 1 x and move pointof interaction 1x speed 
+//     while(slow!=pointOfinteraction){
+//         slow = slow ->next;
+//         pointOfinteraction= pointOfinteraction->next;
+//     }
+//     return slow;
+// }
+
+  
+//     int lengthOfLoop(Node *head) {
+//         // code here
+//         Node *startingNode = getFisrtNode(head);
+//         if(!startingNode){return 0;}
+//         Node *temp = startingNode;
+//         int count = 1;
+//         while(temp->next!=startingNode){
+//             temp = temp->next;
+//             count++;
+            
+//         }
+//         return count;
+//     }
+// };
+
+
+
+
+
+
+
+
