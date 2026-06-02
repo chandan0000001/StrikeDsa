@@ -75,3 +75,7 @@ int main(){
 
         return 0;
 }
+
+
+
+//All ooperation are going in O(1) 
